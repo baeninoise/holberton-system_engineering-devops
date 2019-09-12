@@ -1,7 +1,7 @@
 0x00 Shell, basics
 ---------------------------
 - This repository contains a practical exercises of shell, Then there will be a short description of each script:
-===========================
+---------------------------
 0. This script contains the command that prints the absolute path name of the current working directory.
 1. This script contains the command that display tha contents list of the current directory.
 2. This script contains the command that changes the working directory to the user's home directory.
