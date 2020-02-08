@@ -5,8 +5,8 @@ while [ $i -le 9 ]
 do
     if [ $i -eq 9 ]
     then
-	printf "Hi\n"
+	echo "Hi"
     fi
-    printf "Holberton School\n"
+    echo "Holberton School"
     i=$((i + 1))
 done
