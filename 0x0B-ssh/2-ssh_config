@@ -1,4 +1,4 @@
-# This is the ssh client system-wide configuration file.  See
+B77;30002;0c# This is the ssh client system-wide configuration file.  See
 # ssh_config(5) for more information.  This file provides defaults for
 # users, and the values can be changed in per-user configuration files
 # or on the command line.
@@ -17,11 +17,11 @@
 
 Host *
 #   ForwardAgent no
-#   ForwardX11 no
+#   ForwardX11 yes
 #   ForwardX11Trusted yes
 #   RhostsRSAAuthentication no
 #   RSAAuthentication yes
-#   PasswordAuthentication no
+#   PasswordAuthentication yes
 #   HostbasedAuthentication no
 #   GSSAPIAuthentication no
 #   GSSAPIDelegateCredentials no
@@ -52,4 +52,5 @@ Host *
     HashKnownHosts yes
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials no
+    PasswordAuthentication no
 #
