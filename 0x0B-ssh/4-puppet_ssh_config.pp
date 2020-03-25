@@ -1,4 +1,4 @@
-B77;30002;0c# SSH Configuration (w/ puppet) password
+# SSH Configuration (w/ puppet) password
 file_line { 'Turn off passwd auth':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
