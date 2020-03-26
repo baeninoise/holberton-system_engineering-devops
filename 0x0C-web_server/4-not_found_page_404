@@ -7,4 +7,4 @@ command="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/wat
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/
 error="\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\troot \/usr\/share\/nginx\/html;\n\tinternal;}"
 sed -i "s/server_name _;/$command$error/" /etc/nginx/sites-available/default
-service nginx start
+service nginx restart
