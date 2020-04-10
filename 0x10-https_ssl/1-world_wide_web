@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Configure a domain zone that the subdomain www points to a load-balancer IP
+func_config()
+{
+    echo -n "The subdomain $2"
+    dig $2.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{ print " is a " $4 " record and points to " $5 }'
+}
+if [ $# -eq 1 ]
+then
+    for data in www lb-01 web-01 web-02
+    do
+	 func_config $1 $data
+    done
+else
+    func_config $1 $2
+fi
+
+
