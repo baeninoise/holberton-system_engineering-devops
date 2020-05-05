@@ -35,7 +35,7 @@ if __name__ == "__main__":
                 NUMBER_OF_DONE_TASKS += 1
                 TASK_TITLE.append(j.get('title'))
 
-    print('{} is done with task({}/{}):'.format(
+    print('{} is done with tasks({}/{}):'.format(
         EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS))
 
     for j in TASK_TITLE:
