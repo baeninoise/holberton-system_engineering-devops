@@ -18,7 +18,8 @@ def recurse(subreddit, hot_list=[], after=''):
     try:
         lists = req.get('data').get('children')
         for i in lists:
-            print(i.get('data').get('title'))
+            hot_list.append(i.get('data').get('title'))
+
     except:
         return(None)
 
