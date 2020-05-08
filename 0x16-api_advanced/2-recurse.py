@@ -19,11 +19,10 @@ def recurse(subreddit, hot_list=[], after=''):
         lists = req.get('data').get('children')
         for i in lists:
             hot_list.append(i.get('data').get('title'))
-
     except:
         return(None)
 
     after_data = req.get('data').get('after')
     if after_data is None:
         return hot_list
-    return recurse(subreddit, hot_list, after)
+    return recurse(subreddit, hot_list, after_data)
