@@ -30,8 +30,8 @@ if __name__ == "__main__":
                     TASK_COMPLETED_STATUS = j.get('completed')
                     TASK_TITLE = j.get('title')
 
-                jsonfile[USER_ID].append({'task': TASK_TITLE,
-                                          'completed': TASK_COMPLETED_STATUS,
-                                          'username': USERNAME})
+                    jsonfile[USER_ID].append({'task': TASK_TITLE,
+                                              'completed': TASK_COMPLETED_STATUS,
+                                              'username': USERNAME})
 
         json.dump(jsonfile, json_file)
