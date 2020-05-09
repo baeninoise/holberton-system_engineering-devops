@@ -27,11 +27,11 @@ if __name__ == "__main__":
             for j in req_todos:
                 if USER_ID == j.get('userId'):
                     USERNAME = i.get('username')
-                    TASK_COMPLETED_STATUS = j.get('completed')
+                    TASK_COMPLETED_S = j.get('completed')
                     TASK_TITLE = j.get('title')
 
                     jsonfile[USER_ID].append({'task': TASK_TITLE,
-                                              'completed': TASK_COMPLETED_STATUS,
+                                              'completed': TASK_COMPLETED_S,
                                               'username': USERNAME})
 
         json.dump(jsonfile, json_file)
